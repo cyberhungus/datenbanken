@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Datenbank Gymnasium</title>
+</head>
+<body style = "font-family: verdana">
+<h1> Maskottchen nach Klasse </h1>
+
+unless result[0]=""
+    div
+        table( style="border: 2px solid black" )
+            each key in Object.keys(result[0])
+                th( style="border: 1px solid black" )= key
+
+            each row in result
+                tr( style="border: 2px solid black" )
+                    each value, key in row
+                        td( style="border: 2px solid black" )= value
+
+else
+    div( style="font-style: italic" ) Kein Treffer
+
+//  nächsten Block end-kommentieren zum Testen oder wenn das vorhergehende nicht funktioniert
+//
+    ul
+        each row in result
+            li=JSON.stringify(row)
+</body>
+</html>

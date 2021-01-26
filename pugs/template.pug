@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Datenbank Gymnasium</title>
+</head>
+<body style = "font-family: verdana">
+
+<form action="/teacherquery">
+<input type="submit" value="Suche nach Lehrern im Fach: ">
+<input name="sqlquery" value="Bio" size=150>
+</form>
+<hr>
+<form action="/bookquery">
+<input type="submit" value="Suche nach Büchern mit Titel: ">
+<input name="sqlquery" value="Home Alone" size=150>
+</form>
+<hr>
+<form action="/mascotquery">
+<input type="submit" value="Suche nach Maskottchen für Klasse: ">
+<input name="sqlquery" value="1A" size=150>
+</form>
+<hr>
+<form action="/courseclassteacherquery">
+<input type="submit" value="Suche nach Lehrer pro Kurs und Klasse: ">
+<input name="sqlquery" value="1A" size=150>
+</form>
+<hr>
+<form action="/courseteacher">
+<input type="submit" value="Suche nach Kursen pro Lehrer: ">
+<input name="sqlquery" value="Bio" size=150>
+</form>
+<hr>
+<form action="/classteacher">
+<input type="submit" value="Suche nach Klassenlehrer von Klasse: ">
+<input name="sqlquery" value="10C" size=150>
+</form>
+<hr>
+<form action="/studentsinclass">
+<input type="submit" value="Suche nach Schülern in  Klasse: ">
+<input name="sqlquery" value="8B" size=150>
+</form>
+<hr>
+<form action="/roompersubject">
+<input type="submit" value="Suche nach Räumen pro Fach ">
+<input name="sqlquery" value="Bio" size=150>
+</form>
+<hr>
+<form action="/studentsinclasscount">
+<input type="submit" value="Suche nach Anzahl von Schülern in  Klasse: ">
+<input name="sqlquery" value="8B" size=150>
+</form>
+<hr>
+<form action="/classleader">
+<input type="submit" value="Klassensprecher in Klasse: ">
+<input name="sqlquery" value="8B" size=150>
+</form>
+<hr>
+<form action="/studentsbyage">
+<input type="submit" value="Schüler nach Alter: ">
+<input type="number" name="sqlquery" value="21" size=150>
+</form>
+<hr>
+<form action="/bookinsert">
+<input type="submit" value="Buch erstellen: ">
+<input name="Autor" value="D. Bankenmann" size=20>
+<input name="ISBN" value="978-3-16-148410-0" size=30>
+<input name="Titel" value="Aufregende Abenteuer in Datenbanken" size=50>
+</form>
+
+
+if result
+    div!=result
+</body>
+</html>
